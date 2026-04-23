@@ -161,8 +161,6 @@ export const WebhookSubscriptionValidation = {
   maxSubscriptions: 10,
   /** The maximum length of the webhook name */
   maxNameLength: 255,
-  /** The maximum length of the webhook url */
-  maxUrlLength: 255,
 };
 
 export const EmojiValidation = {

@@ -57,11 +57,7 @@ class WebhookSubscription extends ParanoidModel<
 
   @IsUrl
   @NotEmpty
-  @Length({
-    max: WebhookSubscriptionValidation.maxUrlLength,
-    msg: `Webhook url must be ${WebhookSubscriptionValidation.maxUrlLength} characters or less`,
-  })
-  @Column
+  @Column(DataType.TEXT)
   url: string;
 
   @Column
